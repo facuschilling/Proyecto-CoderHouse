@@ -1,0 +1,172 @@
+/* Tipografía */
+/* 1rem = 10px */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { /* Tipografía para todo el doc */
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+}
+
+
+/* HEADER Y NAV */
+header { 
+    background-color: #005496;
+}
+
+header nav {
+    font-size: 2.0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listanav {
+    list-style: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+
+nav img {
+    width: 250px;
+    padding: 20px;
+}
+/*  */
+
+
+h2 { /* Títulos */
+    color: #005496;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+h3 { /* Subtítulo */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 { /* Título producto */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+p {
+    color: #2d2d2d;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background-image: url(../src/Banner.png);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos h4 {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 80% 0 0 0;
+}
+
+.dvh {
+    background-image: url(../src/dvh.png);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.laminado {
+    background-image: url(../src/laminado.png);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.templado {
+    background-image: url(../src/templado.png);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.representantes {
+    background-color: #3d3d3d;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.listarepre {
+    list-style: none;
+    display: flex;
+}
+
+footer, .footercontacto p{
+    background-color : #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.listafooter1 {
+    list-style: none;
+}
+
+
+.redes {
+    width: 2rem;
+}
+
+.inputscontacto {
+    color:#005496;
+    font-size: 2.5rem;
+}
+
+.titulomaderas {
+    color: #AFA16A;
+}
+
+.productosmaderas {
+    color: #AFA16A;
+}
+
+.descripcionmaderas {
+    color: #AFA16A;
+    font-size: 2rem;
+}
+
+.titulosvidrios {
+    color:#005496;
+}
