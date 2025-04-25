@@ -35,10 +35,21 @@ h1 {
 }
 
 @media screen and (max-width: 1279px) {
-    .navpc {
+
+    .navmobile {
         display: none;
     }
 
+    .navpc {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navpc {
+        display: none;
+    }
     .listanavmobile {
         list-style: none;
         width: 100%;
@@ -55,8 +66,27 @@ h1 {
         align-content: center;
         justify-items: center;
         justify-content: center;
+        font-size: 1.3rem;
     }
 
+    .productos {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .dvh, .laminado, .templado {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .navmobile {
+        font-size: 1.0rem;
+    }
+    
 }
 
 header nav {
@@ -125,6 +155,9 @@ a {
 .productos {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    gap: 50px;
+    padding: 0 20px 0 20px;
 }
 
 .productos h4 {
@@ -137,22 +170,22 @@ a {
 .dvh {
     background-image: url(../src/dvh.png);
     background-size: cover;
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
 }
 
 .laminado {
     background-image: url(../src/laminado.png);
     background-size: cover;
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
 }
 
 .templado {
     background-image: url(../src/templado.png);
     background-size: cover;
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
 }
 
 .obras {
