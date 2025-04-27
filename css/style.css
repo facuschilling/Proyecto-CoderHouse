@@ -43,6 +43,10 @@ h1 {
     .navpc {
         font-size: 1rem;
     }
+
+    .listanav {
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -80,6 +84,22 @@ h1 {
         height: 100%;
     }
 
+    .listarepre {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center !important;
+        gap: 20px;
+    }
+
+    .footercontacto {
+        flex-direction: row !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -206,10 +226,12 @@ a {
 }
 
 .listarepre {
+    height: 100%;
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 0px; /* Bootstrap le está agregando 20px ?????????? */
 }
 
 footer, .footercontacto p{
@@ -217,7 +239,7 @@ footer, .footercontacto p{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 50px;
+    padding: 20px 20px;
     color: white;
     font-size: 1.5rem;
 }
