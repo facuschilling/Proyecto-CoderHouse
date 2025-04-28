@@ -54,6 +54,7 @@ h1 {
     .navpc {
         display: none;
     }
+
     .listanavmobile {
         list-style: none;
         width: 100%;
@@ -103,9 +104,12 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-    .navmobile {
-        font-size: 1.0rem;
+    .navmobile .listanavmobile {
+        font-size: 0.7rem;
+        white-space: nowrap;
+        padding: 0px;
     }
+
     
 }
 
@@ -278,4 +282,17 @@ footer, .footercontacto p{
 
 .titulosvidrios {
     color:#005496;
+}
+
+.mainnosotros {
+    padding: 20px;
+}
+.imgnosotros {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.titulonosotros {
+    padding-top: 0px;
 }
