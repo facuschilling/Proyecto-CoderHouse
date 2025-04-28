@@ -92,6 +92,12 @@ h1 {
         padding: 10px;
     }
 
+    .imgvidriosflex {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
     footer {
         flex-direction: column;
         align-items: center !important;
@@ -101,6 +107,7 @@ h1 {
     .footercontacto {
         flex-direction: row !important;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -110,7 +117,9 @@ h1 {
         padding: 0px;
     }
 
-    
+    .btn-lg {
+        font-size: 1rem;
+    }
 }
 
 header nav {
@@ -253,6 +262,7 @@ footer, .footercontacto p{
     flex-direction: column;
     gap: 15px;
 }
+
 .listafooter1 {
     list-style: none;
 }
@@ -282,11 +292,13 @@ footer, .footercontacto p{
 
 .titulosvidrios {
     color:#005496;
+    padding-top: 20px;
 }
 
 .mainnosotros {
     padding: 20px;
 }
+
 .imgnosotros {
     width: 50%;
     height: 50%;
@@ -295,4 +307,42 @@ footer, .footercontacto p{
 
 .titulonosotros {
     padding-top: 0px;
+}
+
+.btn-lg {
+    font-size: 3rem;
+}
+
+.btn-sm {
+    font-size: 1.5rem;
+}
+
+.imgvidrios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgvidrios1 {
+    width: 250px;
+}
+
+.mainvidrios {
+    padding: 20px;
+}
+
+.imgvidriosflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 }
