@@ -110,6 +110,8 @@ h1 {
 
     .mainnosotros {
         grid-template-columns: 1fr !important;
+        align-items: center !important;
+        justify-items: center !important;
       }
       
       .titulonosotros {
@@ -136,6 +138,8 @@ h1 {
 
     .mainnosotros {
         grid-template-columns: 1fr !important;
+        align-items: center !important;
+        justify-items: center !important;
       }
       
       .titulonosotros {
