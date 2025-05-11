@@ -1,0 +1,145 @@
+/* VARIABLES */
+$color-vidrios: #005496;
+$color-maderas: #AFA16A;
+$color-gris: #3d3d3d;
+/* TIPOGRAFÍA GRAL */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin flex-medio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+}
+
+    header {
+        background-color: $color-vidrios;
+
+        .navfinal {
+            font-size: 2.0rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .listanav {
+                list-style: none;
+                width: 40%;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 20px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    
+                    &:hover {
+                        color: #ffffff50;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    }
+                }
+            }
+
+            .logo {
+                width: 200px;
+                padding: 20px;
+            }
+        }
+    }
+
+    /* TITULOS y SUBTITULOS */
+    h1 {
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    h2 {
+        color: $color-vidrios;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;        
+    }
+
+    h3 {
+        color: white;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    h4 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    p {
+        color: $color-gris;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        background-color : #2d2d2d;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 20px;
+        color: white;
+        font-size: 1.5rem;
+
+        .footercontacto {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            svg {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .listafooter1 {
+            list-style: none;;
+        }
+
+        .listafooter {
+            list-style: none;
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .redes {
+            width: 2rem;
+        }
+    }
+
+@media screen and (max-width: 1279px) {
+    html {
+        .navfinal {
+            font-size: 1rem;
+        
+            .listanav {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

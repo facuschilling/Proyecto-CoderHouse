@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* TIPOGRAFÍA GRAL */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #005496;
+}
+header .navfinal {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navfinal .listanav {
+  list-style: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+header .navfinal .listanav li a {
+  text-decoration: none;
+  color: white;
+}
+header .navfinal .listanav li a:hover {
+  color: rgba(255, 255, 255, 0.3137254902);
+  transition: all 0.2s ease-in-out;
+}
+header .navfinal .logo {
+  width: 200px;
+  padding: 20px;
+}
+
+/* TITULOS y SUBTITULOS */
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+h2 {
+  color: #005496;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h4 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+p {
+  color: #3d3d3d;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+footer .footercontacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footercontacto svg {
+  color: white;
+  text-decoration: none;
+}
+footer .listafooter1 {
+  list-style: none;
+}
+footer .listafooter {
+  list-style: none;
+}
+footer .listafooter a {
+  text-decoration: none;
+  color: white;
+}
+footer .redes {
+  width: 2rem;
+}
+
+@media screen and (max-width: 1279px) {
+  html .navfinal {
+    font-size: 1rem;
+  }
+  html .navfinal .listanav {
+    margin-bottom: 0px;
+  }
+}
+/* VARIABLES */
+main .banner {
+  background-image: url(../src/Banner.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .productos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 50px;
+  padding: 0 20px 0 20px;
+}
+main .productos h4 {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 80% 0 0 0;
+}
+main .productos .dvh, main .productos .laminado, main .productos .templado {
+  background-size: cover;
+  width: 80%;
+  height: 80%;
+}
+main .productos .dvh {
+  background-image: url(../src/dvh.png);
+}
+main .productos .laminado {
+  background-image: url(../src/laminado.png);
+}
+main .productos .templado {
+  background-image: url(../src/templado.png);
+}
+main .obras {
+  padding: 50px;
+}
+main .obras img {
+  width: 100%;
+  height: 100%;
+}
+main .representantes {
+  background-color: #3d3d3d;
+  color: white;
+  height: 150px;
+}
+main .representantes .listarepre {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
+}
+main .representantes .listarepre a:hover {
+  animation: agrandar 0.2s forwards;
+}
+
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+/* VARIABLES */
+html .mainnosotros {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+html .mainnosotros .titulonosotros {
+  color: #005496;
+  grid-column: 1/3;
+  text-align: center;
+  padding-top: 0px;
+}
+html .mainnosotros .textonosotros {
+  text-align: justify;
+}
+html .mainnosotros .imgnosotros {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+html .mainnosotros .fullcolumna {
+  grid-column: 1/-1;
+}
+
+/* VARIABLES */
+main .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+main .contacto .inputscontacto {
+  color: #005496;
+  font-size: 2.5rem;
+}
+
+/* VARIABLES */
+main .titulomaderas, main .productosmaderas {
+  color: #AFA16A;
+}
+main .descripcionmaderas {
+  color: #AFA16A;
+  font-size: 2rem;
+}
+
+/* VARIABLES */
+html .btn-lg {
+  font-size: 3rem;
+}
+html .btn-sm {
+  font-size: 1.5rem;
+}
+html .imgvidrios1 {
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  html header .navfinal {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  html header .navfinal .listanav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+  }
+  html header .navfinal .listanav a {
+    padding: 0px 20px 0px 20px;
+  }
+  html .productos {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  html .productos .dvh, html .productos .laminado, html .productos .templado {
+    width: 100%;
+    height: 100%;
+  }
+  html .listarepre {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+  }
+  html footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  html footer .footercontacto {
+    flex-direction: row;
+  }
+  html .mainnosotros {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  html .mainnosotros .titulonosotros {
+    grid-column: 1/-1;
+  }
+  html .mainnosotros .imgnosotros {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  header .navfinal .listanav {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    padding: 0px;
+  }
+  .btn-lg {
+    font-size: 1rem;
+  }
+  .mainnosotros {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .mainnosotros .titulonosotros {
+    grid-column: 1/-1;
+  }
+  .mainnosotros .imgnosotros {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
