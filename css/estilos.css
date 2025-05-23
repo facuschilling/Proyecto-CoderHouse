@@ -215,6 +215,10 @@ html .mainnosotros .fullcolumna {
 }
 
 /* VARIABLES */
+main .titulonosotros {
+  color: #005496;
+  padding: 20px;
+}
 main .contacto {
   display: flex;
   flex-direction: column;
@@ -226,10 +230,17 @@ main .contacto .inputscontacto {
   color: #005496;
   font-size: 2.5rem;
 }
+main .ubicacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
 /* VARIABLES */
 main .titulomaderas, main .productosmaderas {
   color: #AFA16A;
+  padding: 20px;
 }
 main .descripcionmaderas {
   color: #AFA16A;
